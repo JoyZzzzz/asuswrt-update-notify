@@ -15,7 +15,7 @@ TELEGRAM="enable"
 
 - `BOT_TOKEN`
 
-This is the token for bot. It is provided in the creation of a bot by following the steps provided in the [Telegram bot API documentation](https://core.telegram.org/bots#3-how-do-i-create-a-bot).
+This is the token for the bot. It is provided in the creation of a bot by following the steps provided in the [Telegram bot API documentation](https://core.telegram.org/bots#3-how-do-i-create-a-bot).
 
 - `CHAT_ID` 
 
