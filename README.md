@@ -1,6 +1,6 @@
 # About
 
-An update notification script for [AsusWRT-Merlin](https://www.asuswrt-merlin.net/) based on the [example script](https://github.com/RMerl/asuswrt-merlin.ng/wiki/Update-Notification-Example). Which is run when there is a new version ([checked every 48 hours at 2 am with a random offset](https://github.com/RMerl/asuswrt-merlin.ng/blob/master/release/src/router/rc/watchdog.c#L5786)).
+An update notification script for [AsusWRT-Merlin](https://www.asuswrt-merlin.net/) based on the [example script](https://github.com/RMerl/asuswrt-merlin.ng/wiki/Update-Notification-Example), which is run when there is a new version ([checked every 48 hours at 2 am with a random offset](https://github.com/RMerl/asuswrt-merlin.ng/blob/master/release/src/router/rc/watchdog.c#L5786)).
 
 # Configuration
 
