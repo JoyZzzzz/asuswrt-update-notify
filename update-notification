@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Enable/Disable (Default: Disable)
+TELEGRAM="disable"
+
+# Telegram Settings
+BOT_TOKEN=""
+CHAT_ID=""
+
+# Do not edit below this point.
+VERS="$(nvram get webs_state_info)"
+VERS="$(echo "$VERS" | awk -F '_' '{print $2 "." $3 "_" $4}')"
+
+MSG="New firmware version $VERS is now available."
+
+telegram() {
+    curl --silent --output /dev/null \
+        --data-urlencode "chat_id=$CHAT_ID" \
+        --data-urlencode "text=$MSG" \
+        "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage"
+}
+
+if [ "$TELEGRAM" = "enable" ]; then
+    telegram
+fi
