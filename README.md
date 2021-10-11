@@ -16,7 +16,7 @@
 
 An update notification script for [AsusWRT-Merlin](https://www.asuswrt-merlin.net/) based on the [example script](https://github.com/RMerl/asuswrt-merlin.ng/wiki/Update-Notification-Example), which is run when there is a new version ([checked every 48 hours at 2 am with a random offset](https://github.com/RMerl/asuswrt-merlin.ng/blob/f32e73d911c839ad43937e28003509e3c011ba75/release/src/router/rc/watchdog.c#L7017)).
 
-### Configuration
+## Configuration
 
 Enable the service you would like to recieve notifications on (e.g. Telegram):
 
