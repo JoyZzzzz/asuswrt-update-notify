@@ -27,11 +27,11 @@ TELEGRAM="enable"
 
 ### Telegram
 
-- `BOT_TOKEN`
+`BOT_TOKEN`
 
 This is the token for the bot. It is provided in the creation of a bot by following the steps provided in the [Telegram bot API documentation](https://core.telegram.org/bots#3-how-do-i-create-a-bot).
 
-- `CHAT_ID` 
+`CHAT_ID` 
 
 This is the unique identifier for the target chat. It can be obtained by messaging the bot and executing the following command (replace `$BOT_TOKEN`). The ID may be found at `"chat": {"id": 12345678},`:
 
@@ -41,15 +41,15 @@ curl https://api.telegram.org/bot$BOT_TOKEN/getUpdates | python -m json.tool
 
 ### Matrix
 
-- `MATRIX_DOMAIN`
+`MATRIX_DOMAIN`
 
 This is the domain for the Matrix server your room is hosted on. For most people this will likely be `matrix.org`.
 
-- `MATRIX_ROOM`
+`MATRIX_ROOM`
 
 This is the internal room ID. The syntax is `!` followed by a random set of letters, for example `!abCDEfGhiJKLMnopQRs`. In Element you can find this by going to the room ➝ `Settings` ➝ `Advanced`.
 
-- `MATRIX_TOKEN`
+`MATRIX_TOKEN`
 
 This is the access token or secret that is used to authenticate the sending of the messages. You may retrieve this by either logging into Element through the browser or running the following command and copying the value from `access_token`:
 
