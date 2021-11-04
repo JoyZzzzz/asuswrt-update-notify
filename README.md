@@ -39,25 +39,6 @@ This is the unique identifier for the target chat. It can be obtained by messagi
 curl https://api.telegram.org/bot$BOT_TOKEN/getUpdates | python -m json.tool
 ```
 
-### Matrix
-
-`MATRIX_DOMAIN`
-
-This is the domain for the Matrix server your room is hosted on. For most people this will likely be `matrix.org`.
-
-`MATRIX_ROOM`
-
-This is the internal room ID. The syntax is `!` followed by a random set of letters, for example `!abCDEfGhiJKLMnopQRs`. In Element you can find this by going to the room ➝ `Settings` ➝ `Advanced`.
-
-`MATRIX_TOKEN`
-
-This is the access token or secret that is used to authenticate the sending of the messages. You may retrieve this by either logging into Element through the browser or running the following command and copying the value from `access_token`:
-
-```sh
-curl -XPOST -d '{"type":"m.login.password", "user":"$USERNAME", "password":"$PASSWORD"}' \
-    "https://matrix.org/_matrix/client/r0/login"
-```
-
 ## Installation
 
 1. Copy `update-notification` into `/jffs/scripts/`. For example:
